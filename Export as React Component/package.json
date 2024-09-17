@@ -29,7 +29,7 @@
     "@svgr/core": "^4.0.3",
     "@svgr/plugin-jsx": "^4.0.3",
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
+    "babel-loader": "^9.0.0",
     "babel-plugin-add-module-exports": "^1.0.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-assign": "^6.22.0",
