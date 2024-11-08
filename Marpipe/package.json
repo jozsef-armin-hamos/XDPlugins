@@ -31,7 +31,7 @@
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-url": "^8.0.0",
-    "run-applescript": "^4.0.0",
+    "run-applescript": "^7.0.0",
     "style-loader": "^0.22.0",
     "tailwindcss": "^1.4.6",
     "vue": "^2.5.17",
