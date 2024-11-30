@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@adobe/xd-plugin-toolkit": "^0.0.1",
-    "axios": "^0.19.2",
+    "axios": "^1.7.8",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
