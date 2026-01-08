@@ -6,7 +6,9 @@
   "scripts": {
     "watch": "nodemon -w src -e js,jsx,json,css -w manifest.json -w webpack.config.js -w package.json -w .babelrc -x 'yarn build && xdpm validate -j && xdpm install -j -w p -o'",
     "build": "webpack --mode development",
-    "release": "webpack --mode development && xdpm package"
+    "release": "webpack --mode development && xdpm package",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "license": "Apache MIT License",
   "author": "Fin.Design <contact@fin.design>",
@@ -21,7 +23,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "css-loader": "^1.0.0",
+    "css-loader": "^2.1.1",
     "cubic2quad": "^1.0.0",
     "file-loader": "^2.0.0",
     "lodash": "^4.17.10",
@@ -30,9 +32,11 @@
     "react-dom": "^16.4.2",
     "stream-buffers": "3.0.2",
     "style-loader": "^0.22.0",
-    "svg2ttf": "4.3.0",
-    "svgicons2svgfont": "9.1.1",
+    "svg2ttf": "6.0.3",
+    "svgicons2svgfont": "13.0.0",
     "svgpath": "^2.1.5",
-    "xmldom": "~0.1.22"
-  }
+    "xmldom": "~0.1.22",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
