@@ -8,7 +8,9 @@
     "xdpm:install": "./node_modules/.bin/xdpm install",
     "xdpm:watch": "./node_modules/.bin/xdpm watch",
     "xdpm:validate": "./node_modules/.bin/xdpm validate",
-    "xdpm:package": "./node_modules/.bin/xdpm package"
+    "xdpm:package": "./node_modules/.bin/xdpm package",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "license": "none",
   "private": true,
@@ -22,22 +24,24 @@
   "dependencies": {
     "@adobe/xdpm": "^4.0.0",
     "applescript": "^1.0.0",
-    "autoprefixer": "^9.7.6",
-    "axios": "^0.19.2",
+    "autoprefixer": "^9.8.1",
+    "axios": "^0.21.3",
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^1.8.0",
     "nanoid": "^3.1.10",
-    "postcss-cli": "^7.1.1",
+    "postcss-cli": "^9.0.0",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-url": "^8.0.0",
     "run-applescript": "^4.0.0",
     "style-loader": "^0.22.0",
-    "tailwindcss": "^1.4.6",
+    "tailwindcss": "^3.0.24",
     "vue": "^2.5.17",
     "vue-router": "^3.3.1",
     "vue-template-compiler": "^2.5.17",
     "vuex": "^3.4.0",
-    "xd-storage-helper": "^1.2.3"
-  }
+    "xd-storage-helper": "^1.2.3",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
