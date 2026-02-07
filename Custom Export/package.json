@@ -4,7 +4,9 @@
   "main": "main.js",
   "scripts": {
     "watch": "nodemon -w src -e js,jsx,css -w webpack.config.js -x yarn build",
-    "build": "webpack --mode development"
+    "build": "webpack --mode development",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "license": "Apache License, Version 2.0",
   "author": "Lorenzo Buosi <hi@chrometaphore.com>",
@@ -18,10 +20,12 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "css-loader": "^1.0.0",
+    "css-loader": "^2.0.0",
     "file-loader": "^2.0.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "style-loader": "^0.22.0"
-  }
+    "style-loader": "^0.22.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
