@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@adobe/xd-plugin-toolkit": "^0.0.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.3",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -31,7 +31,7 @@
     "base-64": "^0.1.0",
     "blob": "^0.1.0",
     "deni-react-treeview": "^1.1.11",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "qs": "^6.9.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
